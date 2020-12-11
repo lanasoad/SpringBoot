@@ -26,7 +26,7 @@ public class Postagem {
 	@Size (min = 5, max = 100)  // determina a qtde de caracter enviados pelo cliente como "título"
 	private String titulo;
 	
-	@NotNull // anotação que determina que o texto não pode ficar em branco
+	@NotNull // anotação que determina que o texto não pode ficar em branco - @NotBlank > notnull + não poder digitar espaço 
 	@Size (min = 5, max = 500)  // determina a qtde de caracter enviados pelo cliente como "texto"
 	private String texto;
 	
